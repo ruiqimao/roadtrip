@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>RoadTrip</title>
+		<link href="css/main.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="screen" id="screen-initial">
+			<div class="center">
+				<h1>RoadTrip</h1>
+				<input type="text" placeholder="Origin" id="origin-box" />
+				<img src="images/loader.gif" id="loader" />
+				<button id="go-button">LET'S GO</button>
+			</div>
+		</div>
+		<div class="screen" id="screen-results">
+			<h1>Your Trip</h1>
+			<button id="show-map-button">SHOW MAP</button>
+			<img id="map" />
+			<div class="route">
+			</div>
+			<a href="" target="_blank" class="total-results-button">SEE ENTIRE ROUTE</a>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

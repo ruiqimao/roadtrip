@@ -1,0 +1,243 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+* {
+	padding:0;
+	margin:0;
+	font-family:Roboto;
+	font-size:1rem;
+}
+
+h1 {
+	font-size:2rem;
+	color:#16A085;
+	font-weight:300;
+	margin-bottom:2rem;
+}
+
+input {
+	padding:0.8rem;
+	font-family:Roboto;
+	font-weight:300;
+	appearance:none;
+	border:1px solid #DDDDDD;
+	box-sizing:border-box;
+}
+
+.screen {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display:none;
+	overflow-y:auto;
+}
+
+.center {
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translateX(-50%) translateY(-50%);
+	-ms-transform:translateX(-50%) translateY(-50%);
+	transform:translateX(-50%) translateY(-50%);
+	width:100%;
+	padding:1rem;
+	box-sizing:border-box;
+	max-width:400px;
+	text-align:center;
+	font-weight:300;
+	color:#444444;
+	line-height:1.5rem;
+}
+
+#screen-initial {
+	display:block;
+}
+
+#origin-box {
+	width:100%;
+	text-align:center;
+}
+
+#loader {
+	padding:1rem;
+	width:2rem;
+	height:2rem;
+	padding-bottom:0;
+	display:none;
+}
+
+#go-button,#show-map-button,.waypoint-info-navigate,.waypoint-info-hotels,.total-results-button {
+	margin-top:1rem;
+	padding:0.8rem;
+	width:100%;
+	appearance:none;
+	outline:none;
+	border:none;
+	color:#FFFFFF;
+	background:#16A085;
+	border-radius:0.3rem;
+	cursor:pointer;
+}
+
+#go-button:hover,#show-map-button:hover,.waypoint-info-navigate:hover,.waypoint-info-hotels:hover,.total-results-button:hover {
+	background:#069075;
+}
+
+#go-button:disabled,#show-map-button:disabled,.waypoint-info-navigate:disabled,.waypoint-info-hotels:disabled,.total-results-button:disabled {
+	background:#46D0B5;
+	cursor:default;
+}
+
+#screen-results {
+	text-align:center;
+	padding:1rem;
+}
+
+#screen-results h1 {
+	text-align:center;
+	font-size:2.5rem;
+	margin-top:1rem;
+}
+
+#show-map-button {
+	width:auto;
+	margin:auto;
+	padding-left:1rem;
+	padding-right:1rem;
+	display:block;
+}
+
+#map {
+	width:100%;
+	max-width:600px;
+	display:block;
+	margin:auto;
+	margin-top:1rem;
+	display:none;
+	padding:1rem;
+	box-sizing:border-box;
+	background:#F8F8F8;
+	border-radius:0.3rem;
+}
+
+.route {
+	padding-top:2rem;
+	width:100%;
+	box-sizing:border-box;
+	max-width:700px;
+	margin:auto;
+	position:relative;
+}
+
+.waypoint {
+	width:100%;
+	padding:1rem;
+	box-sizing:border-box;
+	text-align:left;
+	padding-left:4rem;
+	padding-right:4rem;
+	position:relative;
+	line-height:1.5rem;
+	margin-top:-0.1rem;
+	min-height:5.4rem;
+}
+
+.waypoint-side {
+	position:absolute;
+	top:1rem;
+	left:1rem;
+	bottom:0;
+	width:1.5rem;
+}
+
+.waypoint-icon {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:1.5rem;
+	box-sizing:border-box;
+	border:0.3rem solid #E74C3C;
+	border-radius:50%;
+	z-index:2;
+}
+
+.waypoint-bar {
+	position:absolute;
+	top:1.4rem;
+	left:0.5rem;
+	right:0.5rem;
+	bottom:-1rem;
+	background:#EEEEEE;
+	z-index:1;
+}
+
+.waypoint-info-button {
+	position:absolute;
+	top:1rem;
+	right:1rem;
+	width:1.5rem;
+	height:1.5rem;
+	cursor:pointer;
+	border-radius:50%;
+}
+
+.waypoint-info-button:hover {
+	background:rgba(0,0,0,0.04);
+}
+
+.waypoint-info-button img {
+	width:1.5rem;
+	height:1.5rem;
+}
+
+.waypoint-info {
+	padding-top:1rem;
+	display:none;
+}
+
+.waypoint-info-map {
+	width:100%;
+}
+
+.waypoint-info-navigate,.waypoint-info-hotels {
+	display:block;
+	text-decoration:none;
+	box-sizing:border-box;
+	margin-top:-0.5rem;
+	font-weight:300;
+	font-size:0.9rem;
+	height:2.9rem;
+}
+
+.waypoint-info-navigate {
+	border-radius:0;
+}
+
+.waypoint-info-hotels {
+	border-radius:0.3rem;
+	background:#26B095;
+	margin-bottom:1rem;
+	margin-top:0;
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+}
+
+.waypoint-info-hotels:hover {
+	background:#16A085;
+}
+
+.waypoint-info-hotels:disabled {
+	background:#56E0C5;
+}
+
+.total-results-button {
+	width:100%;
+	box-sizing:border-box;
+	max-width:700px;
+	text-decoration:none;
+	margin:auto;
+	margin-bottom:1rem;
+	display:block;
+}
